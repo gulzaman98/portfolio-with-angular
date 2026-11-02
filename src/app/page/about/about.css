@@ -1,0 +1,123 @@
+.about-section {
+  padding: 60px 8%;
+  background-color: #0b1120;
+  color: #ffffff;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Profile Image Box */
+.about-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.image-border {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  border: 2px solid #00d2ff;
+  padding: 10px;
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.2);
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Details Section */
+.badge {
+  color: #00d2ff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin: 10px 0 20px 0;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.description {
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.info-item .label {
+  color: #64748b;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.info-item .value {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.info-item .ready {
+  color: #10b981;
+}
+
+/* Skill Tags */
+.skills-summary h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #e2e8f0;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-tags span {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #38bdf8;
+}
+
+/* Responsive View */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-tags {
+    justify-content: center;
+  }
+}
